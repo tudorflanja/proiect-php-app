@@ -147,3 +147,41 @@ UNIQUE KEY uq_student_course (student_id, course_id)
 );
 ```
 
+---
+
+## 🔐 Authentication System
+
+- Passwords are stored securely using PHP’s built-in `password_hash()` function.  
+- Users log in via `login.php`, and session variables are used to restrict access.  
+- Logging out via `logout.php` clears the active session.  
+- Default admin credentials can be recreated using `users_seed.php`.  
+
+---
+
+## 💡 Key Concepts Demonstrated
+
+- **Relational Database Design** (Parent–Child relationships)  
+- **Foreign Keys and Cascade Operations**  
+- **Secure PDO Queries and Prepared Statements**  
+- **Session-Based Authentication**  
+- **Separation of Concerns** via modular structure  
+- **Scalable CRUD architecture** suitable for real-world applications  
+
+---
+
+## 📝 Conclusion
+
+The **PHP + MySQL Student–Course Management System** demonstrates the core principles of database-driven web applications.  
+It highlights CRUD functionality, secure authentication, and data integrity through relational modeling.  
+
+This project can serve as a foundation for:
+- 🎓 Academic management systems  
+- 🏫 Small-scale CMS or training portals  
+- 🧠 Learning relational data handling with PHP and SQL  
+
+It’s a lightweight, easy-to-understand example of **modern procedural PHP** and can be expanded with:
+- 📄 Pagination and search filters  
+- 📑 CSV/PDF export  
+- 🔐 Role-based permissions  
+- 🌐 REST API endpoints  
+
