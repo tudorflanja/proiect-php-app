@@ -108,3 +108,41 @@ You can run the application locally using **XAMPP** or deploy it on a web server
 2. Create a new MySQL database and import the file `dump.sql`.  
 3. Update the file `inc/db.php` with your database credentials.  
 4. Access the project through your hosting domain, for example: https://yourdomain.com/proiect_php_app
+
+---
+
+## 🗄️ Database Schema
+
+The database consists of three related tables:
+
+```sql
+CREATE DATABASE IF NOT EXISTS proiect_php
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_general_ci;
+
+USE proiect_php;
+
+CREATE TABLE students (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+email VARCHAR(120) UNIQUE NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE courses (
+id INT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(120) NOT NULL,
+professor VARCHAR(120),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE enrollments (
+id INT AUTO_INCREMENT PRIMARY KEY,
+student_id INT NOT NULL,
+course_id INT NOT NULL,
+enroll_date DATE DEFAULT (CURRENT_DATE),
+FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE,
+FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE,
+UNIQUE KEY uq_student_course (student_id, course_id)
+);
+
