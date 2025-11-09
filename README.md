@@ -99,3 +99,13 @@ You can run the application locally using **XAMPP** or deploy it on a web server
 6. **Login Credentials**
    Username: admin
    Password: admin123
+
+---
+
+### Option 2: Deploy Online (Web Hosting)
+
+1. Upload the `proiect_php_app` folder to your web server (e.g., `public_html/`).  
+2. Create a new MySQL database and import the file `dump.sql`.  
+3. Update the file `inc/db.php` with your database credentials.  
+4. Access the project through your hosting domain, for example:
+(https://yourdomain.com/proiect_php_app)
