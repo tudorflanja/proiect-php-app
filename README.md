@@ -97,3 +97,5 @@ You can run the application locally using **XAMPP** or deploy it on a web server
      ```
 
 6. **Login Credentials**
+   Username: admin
+   Password: admin123
