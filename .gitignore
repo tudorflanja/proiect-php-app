@@ -1,0 +1,19 @@
+# XAMPP / Local
+*.zip
+*.sql
+/vendor/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Cache
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# Sistem
+*.bak
+*.old
