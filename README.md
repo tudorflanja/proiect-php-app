@@ -145,4 +145,5 @@ FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE,
 FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE,
 UNIQUE KEY uq_student_course (student_id, course_id)
 );
+```
 
