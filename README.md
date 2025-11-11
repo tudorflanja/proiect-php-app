@@ -54,16 +54,18 @@ The `enrollments` table ensures that deleting a student or course automatically 
 
 ## 📂 Project Structure
 
-- `assets/` – Contains CSS styling for layout and UI elements  
-- `inc/` – Common includes: database connection, authentication, header, and footer  
-- `students/` – CRUD operations for students  
-- `courses/` – CRUD operations for courses  
+- `assets/` – Contains CSS styling for layout and UI elements
+- `courses/` – CRUD operations for courses
+- `db/` – SQL dump or schema for database creation
 - `enrollments/` – CRUD operations for enrollments  
-- `db/` – SQL dump or schema for database creation  
+- `inc/` – Common includes: database connection, authentication, header, and footer  
+- `students/` – CRUD operations for students
+- `.gitignore` – Specifies which files and folders should be ignored by Git
+- `README.md` – Full project documentation and setup instructions  
 - `login.php` – User authentication page  
-- `logout.php` – Ends the user session  
-- `users_seed.php` – Script that creates a default admin user  
+- `logout.php` – Ends the user session
 - `test_db.php` – Verifies successful connection to the MySQL database  
+- `users_seed.php` – Script that creates a default admin user  
 
 ---
 
